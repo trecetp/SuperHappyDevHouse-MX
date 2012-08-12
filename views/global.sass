@@ -10,82 +10,108 @@ $tangerine: #F57B0E
 //Mixins
 
 @mixin clear
-	overflow: hidden
+  overflow: hidden
 
 @mixin round-corners($radius)
-	-webkit-border-radius: $radius
-	-moz-border-radius: $radius
-	-khtml-border-radius: $radius
-	border-radius: $radius
-	padding: $radius
-	
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -khtml-border-radius: $radius
+  border-radius: $radius
+  padding: $radius
+
 @mixin layout($columns, $width, $padding)
-	width: $width/$columns - $padding
-	padding-right: $padding 
-	float: left
-	
+  width: $width/$columns - $padding
+  padding-right: $padding 
+  float: left
+
 @mixin box-shadow($value)
-	-moz-box-shadow: $value  
-	-webkit-box-shadow: $value
-	box-shadow: $value
-	
+  -moz-box-shadow: $value  
+  -webkit-box-shadow: $value
+  box-shadow: $value
+
 
 //Globals
 
 body
-	font-family: Helvetica, Arial, sans-serif
-	background: $gray url("/images/bg.jpg") repeat scroll 0 0
-	font-size: 18px
+  font-family: Helvetica, Arial, sans-serif
+  background: $gray url("/images/bg.jpg") repeat scroll 0 0
+  font-size: 18px
 
 h1
-	font-family: "Reenie Beanie", Arial, sans-serif
-	color: $white
-	font-size: 40px
-	letter-spacing: -0.05em
+  font-family: "Anonymous Pro", sans-serif
+  color: $white
+  font-size: 24px
+  letter-spacing: -0.05em
 
 h2
-	text-align: center
-	color: $gray
-	font-size: 40px
-	letter-spacing: -0.04em
-	margin: 0.2em 0
-	text-shadow: 0px 1px 1px #FFF
+  text-align: center
+  color: $gray
+  font-size: 40px
+  letter-spacing: -0.04em
+  margin: 0.2em 0
+  text-shadow: 4px 4px 1px rgba( 0, 0, 0, 0.2 )
 
 h3
-	font-size: 30px
-	letter-spacing: -0.04em
-	margin:  0.2em 0
-	color: $yellow
-	text-shadow: 0px 1px 1px #222
+  font-size: 30px
+  letter-spacing: -0.04em
+  margin:  0.2em 0
+  color: $yellow
+  text-shadow: 0px 1px 1px #222
+  font-family: "Anonymous Pro", sans-serif
 
 p
-	line-height: 1.2em
-	margin-bottom: 1em		
+  line-height: 1.2em
+  margin-bottom: 1em		
+  font-size: 14px
+  font-family: "Anonymous Pro", sans-serif
+  font-weight: bold
 
 .hr
-	display: block
-	background: transparent url('/images/hr.png') no-repeat scroll 0 0
-	height: 35px
-	width: 853px
-	margin: 10px auto 0
-	
+  display: block
+  background: transparent url('/images/hr.png') no-repeat scroll 0 0
+  height: 35px
+  width: 853px
+  margin: 10px auto 0
+
+#next-event
+  position: fixed
+  top: 0
+  left: 0
+  background: rgba( 0, 0, 0, 0.5)
+  width: 100%
+
+  p
+    padding: 0 20px
+    text-shadow: 1px 1px #C90, 2px 2px #C90, 3px 3px #C90
+    color: #fff
+  a
+    background: #000
+    background: black
+    top: 0
+    position: absolute
+    padding: 14px 20px
+    right: 0
+    color: white
+    text-decoration: none
+    text-transform: uppercase
+
 #contents
-	width: 960px
-	margin: 0 auto
+  width: 960px
+  margin: 0 auto
 
-	#header
-		text-align: center
-		margin-top: 30px
+  #header
+    text-align: center
+    margin-top: 30px
 
-		#tagline
-			width: 720px
-			margin: 30px auto 30px
+    #tagline
+      width: 720px
+      margin: 30px auto 30px
 
-	#main
-		overflow: hidden
-		color: $black
-		text-shadow: 0px 1px 1px #FFF
-		font-weight: bold
+  #main
+    overflow: hidden
+    color: $black
+    text-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.2 )
+    font-weight: bold
 
-		.box
-			@include layout(3, 960px, 20px)
+    .box
+      @include layout(3, 960px, 20px)

@@ -1,12 +1,20 @@
 !!! Strict
 %html{:xmlns => 'http://www.w3.org/1999/xhtml'}
-	%head
-		%title
-			= @title || 'SuperHappyDevHouse MX'
-		%meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8' }
-		%meta{:name => 'description', :content => 'Una reunión informal de personas interesadas en experimentar los límites de los sistemas así como en construir cosas nuevas por curiosidad intelectual y simple diversión. En otras palabras, una Fiesta Hacker.' }
-		%link{:rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=Reenie+Beanie', :type => 'text/css', :media => 'screen'} 
-		%link{:rel => 'stylesheet', :href => '/reset.css', :type => 'text/css', :media => 'all'}
-		%link{:rel => 'stylesheet', :href => '/global.css', :type => 'text/css', :media => 'all'}
-	%body
-		= yield
+  %head
+    %title
+      = @title || 'SuperHappyDevHouse CO'
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8' }
+    %meta{:name => 'description', :content => 'Una reunión informal de personas interesadas en experimentar los límites de los sistemas así como en construir cosas nuevas por curiosidad intelectual y simple diversión. En otras palabras, una Fiesta Hacker.' }
+    %link{:rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=Reenie+Beanie', :type => 'text/css', :media => 'screen'} 
+    %link{:rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=Anonymous+Pro', :type => 'text/css', :media => 'screen'} 
+    %link{:rel => 'stylesheet', :href => '/reset.css', :type => 'text/css', :media => 'all'}
+    %link{:rel => 'stylesheet', :href => '/global.css', :type => 'text/css', :media => 'all'}
+  %body
+    #next-event
+      %p
+        25/08/2011 09:00:00 En #SocialColectivo
+        %a{ :href => 'Free Tickets' }
+          !Unirse a la #Fiesta¡
+
+
+    = yield
