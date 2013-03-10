@@ -12,24 +12,19 @@
   %body
     #next-event
       %p
-        16/05/2013 09:00:00 a 21:00:00 en 
-        %a{ :href => 'http://www.hackbo.co/hackboweb/default/evento/222'}
+        El 16 de Marzo de 2013 desde las 09:00 a las 21:00:00 en 
+        %a{ :href => 'http://www.hackbo.co/hackboweb/default/evento/222', :target=> '_blank'}
           HackBo (HackerSpace Bogotá)
-        %a.rsvp{ :href => 'https://docs.google.com/a/lanzacohete.co/spreadsheet/viewform?formkey=dHRTaHZ2Zy03bDFOM3FZN3pRVHRaaWc6MQ', :title => 'It\'s free' }
+        %a.rsvp{ :href => 'http://shdhco1303.eventbrite.com', :title => 'Es Gratis!' , :target=> '_blank'}
           !Unirse a la #Fiesta¡
 
     = yield
 
     #footer
       %p
-        Hosts de la fiesta:
-        %a{ :href => 'https://twitter.com/senorpasajero' }
-          @senorpasajero
+        Siguenos en: 
+        %a{ :href => 'https://www.facebook.com/HackBo' }
+          Facebook
         y
-        %a{ :href => 'https://twitter.com/codetagme' }
-          @codetagme
-        , en caso de no encontrarlos pregunte por
-        %a{ :href => 'https://twitter.com/elramireza' }
-          @elramireza
-        !
-        
+        %a{ :href => 'https://twitter.com/hackbo' }
+          Twitter        
